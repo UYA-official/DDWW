@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>울산청년연합회</title>
+  <meta name="description" content="울산과 청년을 잇다! 다양한 청년들과 기업과 또 정책과 이어주는 울산청년연합회입니다" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="홈으로 이동">
+        <img src="assets/logo.jpg" alt="울산청년연합회 로고" />
+        <span class="title">울산청년연합회</span>
+      </a>
+
+      <nav class="primary" aria-label="주 메뉴">
+        <a href="#about">소개</a>
+        <a href="#programs">프로그램</a>
+        <a href="#news">공지사항</a>
+        <a href="#contact">연락처</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-controls="mobile-drawer" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer for mobile -->
+  <div id="mobile-drawer" class="drawer" aria-hidden="true">
+    <div class="backdrop" data-close="drawer"></div>
+    <div class="panel" role="dialog" aria-label="모바일 메뉴">
+      <a href="#about" data-close="drawer">소개</a>
+      <a href="#programs" data-close="drawer">프로그램</a>
+      <a href="#news" data-close="drawer">공지사항</a>
+      <a href="#contact" data-close="drawer">연락처</a>
+      <a href="notice_site/index.html">공지 더보기</a>
+    </div>
+  </div>
+
+  <main id="home">
+    <section id="about" class="section anchor-offset">
+      <div class="container grid cols-2">
+        <div class="card">
+          <h2>울산과 청년을 잇다</h2>
+          <p class="lead">다양한 청년들과 기업, 정책을 이어주는 <strong>울산청년연합회</strong>입니다.</p>
+          <p>네트워킹, 프로젝트, 홍보 및 행사 기획 등 다양한 활동을 통해 지역 생태계를 활성화합니다.</p>
+          <div class="badge">함께할 청년, 기업 모집</div>
+        </div>
+        <div><img src="assets/조직도@4x.png" alt="울산청년연합회 조직도" /></div>
+      </div>
+    </section>
+
+    <section id="programs" class="section anchor-offset">
+      <div class="container">
+        <h2>주요 프로그램</h2>
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>네트워킹</h3>
+            <p>분야별 정기 모임과 협업 매칭을 운영합니다.</p>
+          </div>
+          <div class="card">
+            <h3>홍보·미디어</h3>
+            <p>행사 홍보, 영상·디자인 제작을 지원합니다.</p>
+          </div>
+          <div class="card">
+            <h3>기업 연계</h3>
+            <p>청년-기업 프로젝트 및 채용 연계를 돕습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section anchor-offset">
+      <div class="container">
+        <div class="center">
+          <h2>공지사항</h2>
+          <p class="muted">새 소식과 안내를 확인하세요</p>
+        </div>
+        <ul class="news-list">
+          <li class="news-item">
+            <a class="news-title" href="notice_site/news1.html">[행사] 9월 정기 네트워킹 안내</a>
+            <span class="news-date">2025-09-05</span>
+          </li>
+          <li class="news-item">
+            <a class="news-title" href="notice_site/news2.html">[모집] 미디어팀 영상 제작 크루</a>
+            <span class="news-date">2025-08-10</span>
+          </li>
+        </ul>
+        <div class="center" style="margin-top:16px;">
+          <a class="btn" href="notice_site/index.html">공지 더보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section anchor-offset">
+      <div class="container grid cols-2">
+        <div class="card">
+          <h2>연락처</h2>
+          <p>문의: <a href="mailto:uya.official@gmail.com">uya.official@gmail.com</a></p>
+          <p>사업 제안, 협업 문의 환영합니다.</p>
+        </div>
+        <div class="card">
+          <h2>세무 안내</h2>
+          <p><img src="assets/hometax_logo.png" alt="홈택스" style="width:120px"></p>
+          <p>사업 관련 세무·회계 상담 연계가 가능합니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> 울산청년연합회 · All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
