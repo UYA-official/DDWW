@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://uya-official.github.io/DDWW/sitemap.xml
